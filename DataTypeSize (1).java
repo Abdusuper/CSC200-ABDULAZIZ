@@ -3,7 +3,7 @@
   Program Title : Demonstrating Variable Data Types in Java with Sizes
   File Name: "DataTypeSize.java"
   
-  Programmer : Sathish Sarma (modified by Rasul)
+  Programmer : Sathish Sarma (modified by Rasul Alisherov)
   Contact Details : sathish.sarma@newinti.edu.my
   Date : 28 August 2025
   
@@ -14,7 +14,6 @@ public class DataTypeSize {
         System.out.println("Demonstrating Data Type Size and Range in Java");
         System.out.println("------------------------------------------------");
 
-        
         byte b = 120;
         short s = 32000;
         int i = 123456789;
@@ -22,6 +21,7 @@ public class DataTypeSize {
         float f = 5.75f;
         double d = 19.99;
         char c = 'A';
+        boolean bool = true;
 
         // byte
         System.out.println("byte value: " + b);
@@ -50,19 +50,25 @@ public class DataTypeSize {
         // float
         System.out.println("float value: " + f);
         System.out.println("  Size: " + Float.SIZE + " bits (" + Float.BYTES + " bytes)");
-        System.out.println("  Range: " + Float.MIN_VALUE + " to " + Float.MAX_VALUE);
+        System.out.println("  Range: " + -Float.MAX_VALUE + " to " + Float.MAX_VALUE);
         System.out.println();
 
         // double
         System.out.println("double value: " + d);
         System.out.println("  Size: " + Double.SIZE + " bits (" + Double.BYTES + " bytes)");
-        System.out.println("  Range: " + Double.MIN_VALUE + " to " + Double.MAX_VALUE);
+        System.out.println("  Range: " + -Double.MAX_VALUE + " to " + Double.MAX_VALUE);
         System.out.println();
 
         // char
         System.out.println("char value: " + c);
         System.out.println("  Size: " + Character.SIZE + " bits (" + Character.BYTES + " bytes)");
         System.out.println("  Range: " + (int) Character.MIN_VALUE + " to " + (int) Character.MAX_VALUE);
+        System.out.println();
+
+        // boolean
+        System.out.println("boolean value: " + bool);
+        System.out.println("  Size: " + "Virtual machine dependent");
+        System.out.println("  Range: " + "true or false");
         System.out.println();
     }
 }
